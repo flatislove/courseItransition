@@ -8,13 +8,13 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import java.util.Collection;
 
-@Entity
+//@Entity
 public class User implements UserDetails {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+ //   @Id
+  //  @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    @Column(unique = true)
+  //  @Column(unique = true)
     private String nickname;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
